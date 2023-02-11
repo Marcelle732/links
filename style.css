@@ -1,0 +1,120 @@
+/* CSS externo */
+/* Seletor{
+    propriedade:valor
+}*/
+
+:root{
+     --primary: #2F2B8C;
+     --primary-dark: #1B1E59;
+     --primary-light:#8979F3;
+     --gray: #666666;
+     --gray-light: #F2DFE2; 
+}
+
+
+
+
+body{
+    margin: 0%;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--primary);   
+}
+
+img{
+    width: 100px;
+    border-radius: 50%;
+    border: 5px solid var(--primary)
+}
+
+div{
+    background-color: var(--gray-light);
+    width: 60%;
+    max-width: 340px; /* LARGURA */ 
+
+    margin-top: 100px;  
+
+    margin-left: auto;   /* PROVISÓRIO */
+    margin-right: auto;
+
+    padding: 30px; /* ESPAÇAMENTO INTERNO */
+    text-align: center;
+    border-radius: 10px;
+}
+
+h1, h2, h3, h4, h5 ,h6{
+    margin: 0%;
+}
+
+h1{
+
+    color: var(--primary-dark);
+    font-size: 32px;
+    
+}
+
+h2{
+    color: var(--primary-light);
+    font-size: 20px
+    
+}
+
+p{
+    color: var(--gray);
+    font-size: 16px;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0%;
+}
+
+li{
+    margin-bottom: 5px;
+}
+
+/* links que estão DENTRO de um <li>*/
+ul a{
+    color: var(--gray-light);
+    background-color: var(--primary);
+    text-decoration: none;
+    display: block;
+    border-radius: 3px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    }
+
+li a:hover{
+    background-color: var(--primary-dark)
+}
+
+li a:active{
+    background-color: var(--prmary-light)}
+
+
+    /* formatando o id copy*/
+#copy{
+    color: var(--primary)}
+
+
+    /*MEDIA QUERY*/
+     @media (min-width: 1280px){
+
+        #link-app{
+            display: none;
+        }
+    }
+    
+    @media(max-width: 414px){
+
+        div{margin-top: 50px ;}
+
+        img{
+            width: 50px;
+        }
+
+        h1{font-size: 24px;}
+
+        h2{font-size: 16px;}
+
+    }
+    
